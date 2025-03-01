@@ -9,13 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- fontawesome CDN -->
+    <script src="https://kit.fontawesome.com/1bc223a2ee.js" crossorigin="anonymous"></script>
+
     
     
 </head>
 <body>
-    <section class="mr-28 ml-28 ">
+  
 
-        <header>
+        <header class="mr-28 ml-28 ">
             <nav class="flex justify-between items-center bg-white shadow-sm mt-5 p-4 rounded-lg">
                 <div class="flex gap-2 items-center">
                     <img src="assets/logo.png" alt="">
@@ -35,8 +38,127 @@
             </nav>
         </header>
 
-    </section>
-    
+        <!-- Main Content -->
+        <div class="mt-5 grid grid-cols-12 gap-6 mr-28 ml-28">
+                
+            <!-- Left Section -->
+            <div class="col-span-9">
+                <!-- Top Cards -->
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-white p-6 rounded-lg shadow text-center flex gap-4 items-center justify-center ">
+                        <div>
+                            <i class="fa-solid fa-square-check p-3 bg-slate-200 text-blue-600 rounded-full"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-500">Task Assigned</p>
+                            <p class="text-3xl font-bold">05</p>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-6 rounded-lg shadow text-white text-center flex items-center">
+                        <img src="assets/board.png" alt="">
+                        <p class="font-bold">Discover Something <br> New Today!</p>
+                    </div>
+                    <div class="bg-slate-200 p-6 rounded-lg shadow text-center flex gap-4 items-center justify-center">
+                        <i class="fa-solid fa-calendar p-3 bg-white  rounded-full"></i>
+                        <div>
+                            <p class="text-gray-500">Wed,</p>
+                            <p class="text-xl font-bold">Jul 28 2025</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Task Cards -->
+                <div class="grid grid-cols-3 gap-4 mt-6">
+
+                    <!-- card 1 -->
+                    <div class="bg-slate-200 p-6 rounded-lg shadow">
+                        <p class="text-sm bg-white px-2 py-1 inline-block rounded">ShopEase</p>
+                        <h2 class="font-bold mt-2">Fix Mobile Button Issue</h2>
+                        <p class="text-gray-500 text-sm bg-white p-5 text-black font-normal rounded-lg">Debug using Chrome DevTools, check for overlapping
+                         </p>
+                        <div class="flex mt-4 gap-16 ">
+                            <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                        </div>
+                    </div>
+                    
+                     <!-- card 2 -->
+                    <div class="bg-slate-200 p-6 rounded-lg shadow">
+                        <p class="text-sm bg-white px-2 py-1 inline-block rounded">CloudSync</p>
+                        <h2 class="font-bold mt-2">Add Dark Mode</h2>
+                        <p class="text-gray-500 text-sm  bg-white p-5 text-black font-normal rounded-lg">Store the user's preference in localStorage, update CSS variable
+                        </p>
+                        <div class="flex mt-4 gap-16 ">
+                            <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                        </div>
+                    </div>
+
+                     <!-- card 3 -->
+                    
+                    <div class="bg-slate-200 p-6 rounded-lg shadow">
+                        <p class="text-sm bg-white px-2 py-1 inline-block rounded">SwiftPay</p>
+                        <h2 class="font-bold mt-2">Optimize Home Page</h2>
+                        <p class="text-gray-500 text-sm bg-white p-5 text-black font-normal rounded-lg">Debug using Chrome DevTools, check for overlapping
+                        </p>
+                        <div class="flex mt-4 gap-16 ">
+                            <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                        </div>
+                    </div>
+
+                     <!-- card 4 -->
+                    <div class="bg-slate-200 p-6 rounded-lg shadow">
+                        <p class="text-sm bg-white px-2 py-1 inline-block rounded">Meta</p>
+                        <h2 class="font-bold mt-2">Add new emoji 🤲</h2>
+                        <p class="text-gray-500 text-sm bg-white p-5 text-black font-normal rounded-lg">Debug using Chrome DevTools, check for overlapping
+                        </p>
+                        <div class="flex mt-4 gap-16 ">
+                            <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                        </div>
+                    </div>
+
+                     <!-- card 5 -->
+                     <div class="bg-slate-200 p-6 rounded-lg shadow">
+                        <p class="text-sm bg-white px-2 py-1 inline-block rounded">Google LLC</p>
+                        <h2 class="font-bold mt-2">Integrate OpenAI API </h2>
+                        <p class="text-gray-500 text-sm bg-white p-5 text-black font-normal rounded-lg">Debug using Chrome DevTools, check for overlapping
+                        </p>
+                        <div class="flex mt-4 gap-16 ">
+                            <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                        </div>
+                    </div>
+
+                     <!-- card 6 -->
+                    <div class="bg-slate-200 p-6 rounded-lg shadow">
+                        <p class="text-sm bg-white px-2 py-1 inline-block rounded">Glassdoar</p>
+                        <h2 class="font-bold mt-2">Improve Job searching </h2>
+                        <p class="text-gray-500 text-sm bg-white p-5 text-black font-normal rounded-lg">Debug using Chrome DevTools, check for overlapping
+                        </p>
+                        <div class="flex mt-4 gap-16 ">
+                            <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
+                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Sidebar -->
+            <div class="col-span-3">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h2 class="font-bold text-center">Activity Log</h2>
+                    <div class="text-center">
+                        <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 ">Clear History</button>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-500 text-sm bg-slate-200 mt-5 p-3 rounded">You have completed the task 'Add Dark Mode' at 12:48:15 PM</p>
+                        <p class="text-gray-500 text-sm bg-slate-200 mt-5 p-3 rounded">You have completed the task 'Optimize Home Page' at 12:50:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
 
 
 
