@@ -17,10 +17,10 @@
 </head>
 <body>
   
-
+        <!-- header section -->
         <header class="mr-28 ml-28 ">
             <nav class="flex justify-between items-center bg-white shadow-sm mt-5 p-4 rounded-lg">
-                <div class="flex gap-2 items-center">
+                <div class="flex gap-2 items-center ">
                     <img src="assets/logo.png" alt="">
                     <h1 class="text-4xl text-gray-500">Dev <span class="font-bold text-black">Board</span></h1>
                 </div>
@@ -28,7 +28,7 @@
                 <div class="flex gap-12 items-center">
                     <div class="flex gap-2  items-center px-6 py-2 bg-slate-200 rounded-full ">
                         <img  src="assets/checkbox.png" alt="">
-                        <h4 class="text-3xl font-bold">23</h4>
+                        <h3 id="task-complate-count" class="text-3xl font-bold">24</h3>
                     </div>
 
                     <div class="p-2 bg-slate-200 rounded-full">
@@ -39,22 +39,22 @@
         </header>
 
         <!-- Main Content -->
-        <div class="mt-5 grid grid-cols-12 gap-6 mr-28 ml-28">
+        <div class="mt-5  grid grid-cols-12 gap-6 mr-28 ml-28">
                 
             <!-- Left Section -->
             <div class="col-span-9">
                 <!-- Top Cards -->
                 <div class="grid grid-cols-3 gap-4">
-                    <div class="bg-white p-6 rounded-lg shadow text-center flex gap-4 items-center justify-center ">
+                    <div class="bg-slate-200 p-6 rounded-lg shadow text-center flex gap-4 items-center justify-center ">
                         <div>
-                            <i class="fa-solid fa-square-check p-3 bg-slate-200 text-blue-600 rounded-full"></i>
+                            <i class="fa-solid fa-square-check p-3 bg-white text-blue-600 rounded-full"></i>
                         </div>
                         <div>
                             <p class="text-gray-500">Task Assigned</p>
-                            <p class="text-3xl font-bold">05</p>
+                            <p id="task-assign" class="text-3xl font-bold">06</p>
                         </div>
                     </div>
-                    <div class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-6 rounded-lg shadow text-white text-center flex items-center">
+                    <div id="new-today-btn" class="bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] p-6 rounded-lg shadow text-white text-center flex items-center cursor-pointer">
                         <img src="assets/board.png" alt="">
                         <p class="font-bold">Discover Something <br> New Today!</p>
                     </div>
@@ -78,7 +78,7 @@
                          </p>
                         <div class="flex mt-4 gap-16 ">
                             <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
-                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                            <button id="primary-btn1" class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
                         </div>
                     </div>
                     
@@ -90,7 +90,7 @@
                         </p>
                         <div class="flex mt-4 gap-16 ">
                             <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
-                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                            <button id="primary-btn" class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
                         </div>
                     </div>
 
@@ -103,7 +103,7 @@
                         </p>
                         <div class="flex mt-4 gap-16 ">
                             <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
-                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                            <button id="primary-btn" class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
                         </div>
                     </div>
 
@@ -115,7 +115,7 @@
                         </p>
                         <div class="flex mt-4 gap-16 ">
                             <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
-                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                            <button id="primary-btn" class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
                         </div>
                     </div>
 
@@ -127,7 +127,7 @@
                         </p>
                         <div class="flex mt-4 gap-16 ">
                             <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
-                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                            <button id="primary-btn" class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
                         </div>
                     </div>
 
@@ -139,7 +139,7 @@
                         </p>
                         <div class="flex mt-4 gap-16 ">
                             <p class="text-sm text-gray-500 ">Deadline: <br> 21 March 2025</p>
-                            <button class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
+                            <button id="primary-btn" class="bg-blue-500 text-white px-4 py-1 rounded ">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -150,12 +150,14 @@
                 <div class="bg-white p-6 rounded-lg shadow">
                     <h2 class="font-bold text-center">Activity Log</h2>
                     <div class="text-center">
-                        <button class="bg-blue-500 text-white px-3 py-1 rounded mt-2 ">Clear History</button>
+                        <button id="activity-log-btn" class="bg-blue-500 text-white px-3 py-1 rounded mt-2 ">Clear History</button>
                     </div>
-                    <div class="mt-4">
-                        <p class="text-gray-500 text-sm bg-slate-200 mt-5 p-3 rounded">You have completed the task 'Add Dark Mode' at 12:48:15 PM</p>
-                        <p class="text-gray-500 text-sm bg-slate-200 mt-5 p-3 rounded">You have completed the task 'Optimize Home Page' at 12:50:00 PM</p>
-                    </div>
+                    
+                </div>
+                <h1 class="text-center text-3xl font-bold mt-5 text-red-600">Task History</h1>
+                <div id="activity-log-history" class="mt-4">
+                    <p></p>
+
                 </div>
             </div>
         </div>  
@@ -168,5 +170,6 @@
 
 
     <script src="js/color-theme.js"></script>
+    <script src="js/toggle-btn.js"></script>
 </body>
 </html>
