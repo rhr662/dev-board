@@ -21,7 +21,7 @@
             </div>
 
             <div>
-                <button class="btn btn-primary">Back to Desk</button>
+                <button id="back" class="btn btn-primary">Back to Desk</button>
 
             </div>
 
@@ -35,23 +35,30 @@
         <h1 class="text-center text-5xl font-bold mt-5 mb-8">Blogs</h1>
         
         <h1 class="bg-white text-2xl font-bold px-5 py-2 mb-1">Question-1: What are the different ways to select an element in the DOM?</h1>
-        <p class="bg-white text-xl px-5 py-1 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt recusandae odit porro consequuntur dignissimos vero iure obcaecati quam quos repellat.</p>
+        <p class="bg-white text-xl px-5 py-1 mb-5">6 type of select DOM element (getElementById),(getElementsByClassName), (getElementsByTagName), (querySelector), (querySelectorAll), (getElementsByName)</p>
 
         
         <h1 class="bg-white text-2xl font-bold px-5 py-2 mb-1">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
-        <p class="bg-white text-xl px-5 py-1 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt recusandae odit porro consequuntur dignissimos vero iure obcaecati quam quos repellat.</p>
+        <p class="bg-white text-xl px-5 py-1 mb-5">innerHTML : is the entire system that can be changed inside the document.
+            InnerText: Changes the element inside the document.
+            InnerContent: Changes the elements inside the document and improves performance.
+        </p>
 
 
         <h1 class="bg-white text-2xl font-bold px-5 py-2 mb-1">Question-3: What is event delegation in the DOM?</h1>
-        <p class="bg-white text-xl px-5 py-1 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt recusandae odit porro consequuntur dignissimos vero iure obcaecati quam quos repellat.</p>
+        <p class="bg-white text-xl px-5 py-1 mb-5">Event data ligation = Lianging an event to a parent instead of a child of code, using vent bubbling to mean centered on the child.</p>
 
 
         <h1 class="bg-white text-2xl font-bold px-5 py-2 mb-1">Question-4: What is event bubbling in the DOM?</h1>
-        <p class="bg-white text-xl px-5 py-1 mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt recusandae odit porro consequuntur dignissimos vero iure obcaecati quam quos repellat.</p>
+        <p class="bg-white text-xl px-5 py-1 mb-5">Event bud positioning means that an event starts at the bottom and goes up the DOM tree. You can turn off the event. This is useful for event delegation and improving performance.</p>
 
 
         <h1 class="bg-white text-2xl font-bold px-5 py-2 mb-1">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
-        <p class="bg-white text-xl px-5 py-1 mb-5 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt recusandae odit porro consequuntur dignissimos vero iure obcaecati quam quos repellat.</p>
+        <p class="bg-white text-xl px-5 py-1 mb-5 ">Create an element	document.createElement("tag")
+            Add at the end	parent.appendChild(element)
+            Remove an element	element.remove()
+            Remove child from parent	parent.removeChild(child)
+        </p>
         
         
     </section>
@@ -59,5 +66,7 @@
 
 
     <script src="js/sub-page.js"></script>
+    <script src="js/toggle-btn.js"></script>
+    <script src="js/back.js"></script>
 </body>
 </html>
